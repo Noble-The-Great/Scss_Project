@@ -1,0 +1,100 @@
+html, #container, body {
+  height: 100%;
+}
+
+body {
+  width: 100%;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#container {
+  border: 5px solid white;
+  background-image: url(https://i.gifer.com/NJEy.gif);
+  background-size: 100% 100%;
+  width: 90%;
+  padding: 20px 20px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+  overflow-y: auto;
+}
+
+#bigpic {
+  border-radius: 0px;
+  border: 10px solid white;
+  background-image: url("../image/./american.jpeg");
+  background-size: 100% 100%;
+  height: 600px;
+  width: 600px;
+  position: relative;
+}
+#bigpic #textinpic {
+  width: 80%;
+  color: white;
+  position: absolute;
+  top: 60%;
+  left: 10%;
+}
+
+#infomode {
+  border-radius: 0px;
+  border: 10px solid white;
+  background-color: white;
+  width: 600px;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+#infomode #education {
+  padding: 23px 40px;
+  width: 80%;
+  font-size: 13px;
+}
+#infomode #education .high {
+  color: #CBA444;
+}
+#infomode #work {
+  padding: 23px 40px;
+  width: 80%;
+  font-size: 13px;
+}
+#infomode #work .high {
+  color: #CBA444;
+}
+#infomode #coding {
+  padding: 23px 40px;
+  width: 80%;
+  font-size: 13px;
+}
+#infomode #coding .high {
+  color: #CBA444;
+}
+#infomode #life {
+  padding: 23px 40px;
+  width: 80%;
+  font-size: 13px;
+}
+#infomode #life .high {
+  color: #CBA444;
+}
+
+@media screen and (max-width: 1377px) {
+  #container {
+    align-content: initial;
+  }
+}
+@media screen and (max-width: 777px) {
+  #bigpic {
+    height: 500px;
+  }
+  #bigpic #textinpic {
+    top: 55%;
+  }
+}
+
+/*# sourceMappingURL=project.css.map */

@@ -1,0 +1,108 @@
+@import 'additional.scss';
+
+
+
+html{
+    height: 100%;
+}
+
+body {
+width: 100%;
+@extend html;
+background-color: $black;
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
+
+#container{
+   border: 5px solid white;
+    background-image: $backgroundimage ;
+    background-size: 100% 100%;
+ @extend html;
+    width: 90%;
+    padding: 20px 20px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    overflow-y: auto;
+}
+
+#bigpic{
+    border-radius: 0px;
+    border: 10px solid white;
+    background-image: url("../image/./american.jpeg");
+    background-size: 100% 100%;
+   height:600px ;
+    width: 600px;
+   position: relative;
+
+   #textinpic{
+    width: 80%;
+    color: white;
+    position: absolute;
+    top: 60%;
+    left: 10%;
+}
+}
+
+
+#infomode{
+    border-radius: 0px;
+    border: 10px solid white;
+    background-color: white;
+    width: 600px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    #education{
+        @include text-section;
+
+        .high{
+            color: $prize-color
+        }
+    }
+     #work{
+        @include text-section;
+        .high{
+            color: $prize-color
+        }
+    
+     }
+    #coding{
+        @include text-section;
+        .high{
+            color: $prize-color
+        }
+    
+    }
+    #life{ 
+        @include text-section;
+        .high{
+            color: $prize-color
+        }
+    }
+}
+
+
+@media screen and (max-width: 1377px){
+    #container{
+        align-content: initial;
+    }
+}
+@media screen and (max-width: 777px){
+
+#bigpic{
+    height: 500px;
+   #textinpic{
+       top: 55%;
+
+   }
+}
+
+}
+
